@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# 🎨 Scss 기본지식
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[추천 블로그](https://nykim.work/97)
 
-## Available Scripts
+```
+(주의)반드시 경로를 맞춰야합니다!
+ex.src/scss/style.scss 파일 변환시
+터미널에서 src/scss 까지 접근해서 아래 명령어를 입력해야합니다
+```
 
-In the project directory, you can run:
+- 파일 변환시 컴파일 명령어
+  - sass [변환할 scss 파일명] [변환될 css 파일명]
+- 폴더 변환시 _자동_ 컴파일 명령어(scss -> css폴더)
+  - sass --watch [input폴더]:[output폴더]
+- $변수명
+- @mixin(Scss 함수생성)
+  - @content 구문을 쓰면 @include로 불러와 쓸 때 내용을 추가로 입력할 수 있음
+- @include(함수 불러오기)
+- @extend(셀렉터 불러오기 %변수명 으로 only 불러오기용으로 사용가능)
+- @mixin vs @extend
+  - 선택자끼리 단순히 속성만 겹치는 관계면 @mixin </br>
+    의미가 비슷한 관계면 @extend(ex. btn 선언 후 color나 크기가 다른 btn 생성시) 사용권장
+- @use(Scss @import) </br>
 
-### `npm start`
+  - @import도 사용가능하나 @use 시용권장
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  </br>

@@ -1,9 +1,13 @@
 div {
-  color: red;
+  color: rgb(255, 200, 0);
 }
 
 h1 {
   color: teal;
+}
+
+h2 {
+  color: tomato;
 }
 
 /*# sourceMappingURL=main.css.map */
