@@ -1,5 +1,11 @@
+.body {
+  width: 98vw;
+  height: 93vh;
+  background-color: #2f2d2d;
+}
+
 div {
-  color: rgb(255, 200, 0);
+  color: white;
 }
 
 h1 {
